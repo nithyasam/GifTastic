@@ -3,8 +3,37 @@
 <head>
 	<meta charset="utf-8">
 	<title>GifTastic</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- GifTastic logic -->
+	<script src="assets/javascript/apiApp.js"></script>
 </head>
 <body>
+<header>
+	GIPHY API - Animals
+</header>
+<div class="container">
+	<div class="row">
+		<!-- Buttons with animals name -->
+		<div class="col-lg-12" id="buttons-view"></div><br><br><br><br><br><br><br><br><br>
+		<div class="col-lg-12" id="formArea">
+		<!-- Enter new animal -->
+		<form id="animal-form">
+			<label for="animal-input"><h3>Add an animal</h3></label>
+			<input type="text" id="animal-input"><br><br>
+			<input type="submit" id="add-animal" value="Add Animal">
+		</form>
+	</div>
+	<!-- Display animal GIFs -->
+	<div class="row">
+		<div class="col-lg-12 text-center" id="animalDisplay"></div>
+	</div>
+	</div>
+</div>
 
 </body>
 </html>
