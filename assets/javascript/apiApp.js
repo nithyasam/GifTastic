@@ -72,6 +72,9 @@ $("#add-animal").on("click", function(event){
 	if(newAnimal !== ""){
 		topics.push(newAnimal);
 	}
+	else{
+		alert("Oops animal name not entered!");
+	}
 	$("#animal-input").val("");
 	renderButtons();
 });
