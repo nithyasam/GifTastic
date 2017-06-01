@@ -28,7 +28,6 @@ function displayAnimalInfo(){
 		method: "GET",
 		url: queryURL
 	}).done(function(response){
-		console.log(response);
 		$("#animalDisplay").empty();
 		for(var i=0; i<response.data.length ;i++) {
 			var imgStill = response.data[i].images.fixed_height_still.url;
